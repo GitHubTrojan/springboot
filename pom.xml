@@ -19,20 +19,18 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.12</version>
       <scope>test</scope>
     </dependency>
     <!-- Add typical dependencies for a web application. spring-boot-starter-web -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-      <version>1.5.2.RELEASE</version>
     </dependency>
     <!-- Add test dependencies for this wen application. spring-boot-starter-test -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
-      <version>1.5.2.RELEASE</version>
     </dependency>
 
     <!-- additional json style message converter. -->
@@ -51,7 +49,6 @@
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-maven-plugin -->
           <groupId>org.springframework.boot</groupId>
           <artifactId>spring-boot-maven-plugin</artifactId>
-          <version>1.5.2.RELEASE</version>
       </plugin>
     </plugins>
   </build>

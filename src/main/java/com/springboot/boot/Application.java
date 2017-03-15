@@ -2,12 +2,9 @@ package com.springboot.boot;
 
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
-import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter4;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.web.HttpMessageConverters;
-import org.springframework.context.annotation.Bean;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.StringHttpMessageConverter;
@@ -35,14 +32,13 @@ public class Application extends WebMvcConfigurerAdapter{
      * this is a method of the WebMvcConfigurerAdapter.class
      * we can override the default value/achievements of spring boot
      * and customize our own HttpMessageConverters.
-     * @param converters
+     * @param converters a message converter list
      */
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
         /*
             using the StringHttpMessageConverter to handle with simple String message.
         */
-
         StringHttpMessageConverter stringConverter= new StringHttpMessageConverter();
         stringConverter.setDefaultCharset(Charset.forName("UTF-8"));
         converters.add(stringConverter);

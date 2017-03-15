@@ -30,7 +30,7 @@ public class HelloWorldController {
            */
         Users user = new Users();
         user.setUid(1);
-        user.setUname("Vincent Wang 王言斌");
+        user.setUname("Vincent Wang 汉字测试");
         return user;                                        //  response on thte page should be {"uid":1,"uname":"Vincent Wang"}
         /*
           step 3 test simple String response
@@ -38,12 +38,5 @@ public class HelloWorldController {
           2. override the method 'configureMessageConverters' to reset the 'List<HttpMessageConverter<?>> converters'.
           3. disable step 2, enable step 1, sending a request on the browse or somewhere, see what happened.
            */
-    }
-
-
-    @RequestMapping("/error")
-    public String error(){
-        logger.info("Hello World! Which means you have build the web application with spring boot 'AutoConfiguration' mode successfully.");
-        return "Hello World! Which means you have build the web application with spring boot 'AutoConfiguration' mode successfully.";
     }
 }
