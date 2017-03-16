@@ -1,4 +1,4 @@
-package com.springboot.boot;
+package com.springboot;
 
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
@@ -10,7 +10,7 @@ import java.util.Properties;
 
 /**
  * Created by Vincent on 2017/3/13.
- * Description spring boot reference doc version 1.5.2 mentioned that:
+ * Description spring config reference doc version 1.5.2 mentioned that:
  * 24.3 Application property files
  * SpringApplication will load properties from application.properties files in the following locations and add them to the Spring Environment:
  * <p>1. A /config subdirectory of the current directory. 当前目录的/config 子目录</p><br/>

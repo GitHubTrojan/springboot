@@ -1,15 +1,17 @@
-package com.springboot.boot;
+package com.springboot.controller;
 
 import com.springboot.model.Users;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseBodyAdvice;
 
 /**
  * Created by Vincent on 2017/3/13.
  * Version 1.0.0
- * Description a simple controller demo using spring boot annotations.
+ * Description a simple controller demo using spring config annotations.
  */
 @RestController
 @RequestMapping("/test")
@@ -18,13 +20,13 @@ public class HelloWorldController {
 
     @RequestMapping("/hello")
     public Object hello(){
-        logger.info("Hello World! Which means you have build the web application with spring boot 'AutoConfiguration' mode successfully.");
+        logger.info("Hello World! Which means you have build the web application with spring config 'AutoConfiguration' mode successfully.");
         /*
          step 1 : test the request, the response value should be
-         "Hello World! Which means you have build the web application with spring boot 'AutoConfiguration' mode successfully"
+         "Hello World! Which means you have build the web application with spring config 'AutoConfiguration' mode successfully"
          with quotes
           */
-//        return "Hello World! Which means you have build the web application with spring boot 'AutoConfiguration' mode successfully. 你好";
+//        return "Hello World! Which means you have build the web application with spring config 'AutoConfiguration' mode successfully. 你好";
         /*
           step 2 test fastJson json serialization/formatter
            */
