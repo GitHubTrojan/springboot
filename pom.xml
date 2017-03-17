@@ -91,6 +91,21 @@
       <artifactId>fastjson</artifactId>
       <version>1.2.28</version>
     </dependency>
+
+    <!-- pagehelper-spring-boot-starter -->
+    <dependency>
+      <groupId>com.github.pagehelper</groupId>
+      <artifactId>pagehelper-spring-boot-starter</artifactId>
+      <version>1.1.0</version>
+    </dependency>
+
+    <!-- apache-commons -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.5</version>
+    </dependency>
+
   </dependencies>
 
   <!-- Package as an executable jar -->

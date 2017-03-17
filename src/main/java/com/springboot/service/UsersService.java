@@ -1,11 +1,10 @@
 package com.springboot.service;
 
+import com.springboot.base.BaseService;
 import com.springboot.model.Users;
 
 /**
  * Created by Vincent on 2017/3/16.
  */
-public interface UsersService {
-    /** 根据主键查询用户 */
-    Users selectByPrimaryKey(int uid);
+public interface UsersService extends BaseService<Users>{
 }

@@ -8,4 +8,9 @@
     <sql id="Base_Column_List">
         uid, uname
     </sql>
+
+    <insert id="insertSelective" parameterType="com.springboot.model.Users">
+        INSERT INTO `users` (`uname`)
+        VALUES (#{uname, jdbcType=VARCHAR})
+    </insert>
 </mapper>
